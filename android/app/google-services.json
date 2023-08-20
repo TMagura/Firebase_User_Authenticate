@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "789400167592",
+    "project_id": "instagram-cloney",
+    "storage_bucket": "instagram-cloney.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789400167592:android:aca2401416b493f6ac4e9d",
+        "android_client_info": {
+          "package_name": "com.example.instagram_cloney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789400167592-ubhb0oggibud8b28o5pbs14fpqpanccc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2iZnOigmJjNhr1sWz3UlTAbTZj-b-6I8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789400167592-ubhb0oggibud8b28o5pbs14fpqpanccc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "789400167592-kambetnn4ipd4lfp3hm74h2d8kolmtqi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.instagramCloney"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
