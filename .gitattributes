@@ -3,5 +3,6 @@
 *.js linguist-detectable=false
 *.java linguist-detectable=false
 *.php linguist-detectable=false
-*.c++ linguist-detectable=false
-*.cmake linguist-detectable=false
+*.cpp linguist-detectable=false
+*.c linguist-detectable=false
+*.html linguist-detectable=false
