@@ -36,7 +36,7 @@ class _SignupScreenState extends State<SignupScreen> {
   }
 
   void selectImage()async{// select the image using the image picker
-    Uint8List im =await pickImage(ImageSource.gallery);
+    Uint8List im =await pickImage(ImageSource.camera);
     setState(() {
       _image = im;
     });
@@ -98,8 +98,8 @@ class _SignupScreenState extends State<SignupScreen> {
                    // a circle Avator for the prof pic
                    Stack(
                     children: [
-                      _image!=null?
-                       CircleAvatar(
+                      _image!=null
+                      ? CircleAvatar(
                         radius: 64,
                         backgroundImage: MemoryImage(_image!),
                       )
@@ -111,7 +111,8 @@ class _SignupScreenState extends State<SignupScreen> {
                         bottom: -10,
                         left: 90,
                         child: IconButton(
-                        onPressed:selectImage,
+                        onPressed:
+                        selectImage,
                         icon: const Icon(Icons.add_a_photo),
                       ),),
                       ],
@@ -174,19 +175,19 @@ class _SignupScreenState extends State<SignupScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
-                      padding: const EdgeInsets.symmetric(vertical: 8),
-                      child: const Text("Don't have an Account ?___", 
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
+                    // Container(
+                    //   padding: const EdgeInsets.symmetric(vertical: 8),
+                    //   child: const Text("Don't have an Account ?___", 
+                    //   style: TextStyle(
+                    //     fontWeight: FontWeight.bold
+                    //     ),
+                    //   ),
+                    // ),
                     GestureDetector(
                       onTap:navigateToLogin,
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: const Text('Login', 
+                        child: const Text("Do you have an Account? Login here", 
                         style: TextStyle(
                           fontWeight: FontWeight.bold
                           ),

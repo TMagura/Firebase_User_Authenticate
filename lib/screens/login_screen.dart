@@ -117,19 +117,19 @@ class _LoginScreenState extends State<LoginScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
-                    child: const Text("Don't have an Account", 
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold
-                      ),
-                    ),
-                  ),
+                  // Container(
+                  //   padding: const EdgeInsets.symmetric(vertical: 8),
+                  //   child: const Text("Don't have an Account", 
+                  //   style: TextStyle(
+                  //     fontWeight: FontWeight.bold
+                  //     ),
+                  //   ),
+                  // ),
                   GestureDetector(
                     onTap:navigateToSignup,
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8),
-                      child: const Text('Sign Up', 
+                      child: const Text(" Don't have an Account?: Sign Up here", 
                       style: TextStyle(
                         fontWeight: FontWeight.bold
                         ),
@@ -139,6 +139,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   
                 ],
               ),
+              const SizedBox(height: 50,),
             ],
           ) ,
         ),
